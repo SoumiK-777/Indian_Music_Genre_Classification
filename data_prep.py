@@ -3,7 +3,7 @@ import os
 import math
 import librosa
 
-DATASET_PATH = "/home/soumik/GACMIS/Dataset/Songs"
+DATASET_PATH = ""
 JSON_PATH = "data_project.json"
 SAMPLE_RATE = 22050
 TRACK_DURATION = 60 # measured in seconds
