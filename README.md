@@ -25,10 +25,10 @@ Features which are useful for audio classification
 ![App Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Spectrogram-19thC.png/640px-Spectrogram-19thC.png)
 
 - **Mel-Spectrogram**: A Spectrogram with the Mel Scale as its y axis. The Mel Scale is the result of some non-linear transformation of the frequency scale. They are used to provide our models with sound information similar to what a human would perceive.
-![App Screenshot](https://miro.medium.com/v2/resize:fit:1400/1*zX-rizZKXXg7Ju-entot9g.png)
+![App Screenshot](https://miro.medium.com/v2/resize:fit:1182/1*OOTqBsjpuXyfYJVdPxWtBA.png)
 
 - **MFCC**: Mel-Frequency Cepstral Coefficients (MFCCs) are coefficients that collectively make up an MFC. They are derived from a type of cepstral (result of computing the inverse Fourier transform (IFT) of the logarithm of the estimated signal spectrum) representation of the audio clip (a nonlinear **spectrum-of-a-spectrum**). They are used in music classification because they capture the spectral characteristics of a sound that are most relevant for human perception of music.
-![App Screenshot](https://miro.medium.com/v2/resize:fit:1400/1*pzE4i1TXaLCmzTXgdxFZjQ.jpeg)
+![App Screenshot](https://i.stack.imgur.com/q8YfI.png)
 
 ## Models Trained
 
@@ -38,3 +38,29 @@ Finally, the best performing CNN model was selected which achieved better accura
 with Flask server.
 
 ## Getting Started
+
+After setting up [miniconda](https://docs.conda.io/en/latest/miniconda.html) on your local system, create a virtual enviorment
+```sh
+conda create -n myenv python=3.9
+``` 
+Activate the enviorment using
+```sh
+conda activate myenv
+``` 
+You can deactivate the enviorment using
+```sh
+conda deactivate
+``` 
+Clone the repository on your local system using
+```sh
+git clone https://github.com/SoumiK-777/Indian_Music_Genre_Classification.git
+``` 
+Install the required packages using
+```sh
+pip install -r requirements.txt
+``` 
+Run the Flask server on localhost using
+```sh
+flask run
+``` 
+You can close the running server anytime by using Ctrl+C in the terminal
