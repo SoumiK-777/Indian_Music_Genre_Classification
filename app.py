@@ -14,10 +14,12 @@ N_MFCC=13
 N_FFT=2048
 HOP_LENGTH=512
 SAMPLE_RATE = 22050
-TRACK_DURATION = 30 # measured in seconds
+TRACK_DURATION = 60 # measured in seconds
 SAMPLES_PER_TRACK = SAMPLE_RATE * TRACK_DURATION
-NUM_SEGMENTS=5
-LABELS=["Bhajan","Bhojpuri","Bollywood Rap","Bollywood Romantic","Ghazal","Sufi"]
+NUM_SEGMENTS=10
+LABELS=['Bhajan', 'Romantic', 'Bhojpuri', 'Rap']
+
+model = tf.keras.models.load_model('cnn_model.h5')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -35,11 +37,10 @@ def predict():
     samples_per_segment = int(SAMPLES_PER_TRACK / NUM_SEGMENTS)
     num_mfcc_vectors_per_segment = math.ceil(samples_per_segment / HOP_LENGTH)
     savepath = session['savepath']
-    model = tf.keras.models.load_model('cnn_model.h5')
     output = os.path.join(DIR_NAME, "temp.wav")
     sound = AudioSegment.from_mp3(savepath)
     sound.export(output, format="wav")
-    signal, sample_rate = librosa.load(output, sr=SAMPLE_RATE, duration=TRACK_DURATION, offset=15)
+    signal, sample_rate = librosa.load(output, sr=SAMPLE_RATE, duration=TRACK_DURATION, offset=30)
     for d in range(NUM_SEGMENTS):
         start = samples_per_segment * d
         finish = start + samples_per_segment
