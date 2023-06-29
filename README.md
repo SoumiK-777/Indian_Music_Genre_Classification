@@ -25,7 +25,7 @@ Features which are useful for audio classification
 ![App Screenshot](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Spectrogram-19thC.png/640px-Spectrogram-19thC.png)
 
 - **Mel-Spectrogram**: A Spectrogram with the Mel Scale as its y axis. The Mel Scale is the result of some non-linear transformation of the frequency scale. They are used to provide our models with sound information similar to what a human would perceive.
-![App Screenshot](https://miro.medium.com/v2/resize:fit:1182/1*OOTqBsjpuXyfYJVdPxWtBA.png)
+![App Screenshot](https://miro.medium.com/v2/resize:fit:1400/1*zX-rizZKXXg7Ju-entot9g.png)
 
 - **MFCC**: Mel-Frequency Cepstral Coefficients (MFCCs) are coefficients that collectively make up an MFC. They are derived from a type of cepstral (result of computing the inverse Fourier transform (IFT) of the logarithm of the estimated signal spectrum) representation of the audio clip (a nonlinear **spectrum-of-a-spectrum**). They are used in music classification because they capture the spectral characteristics of a sound that are most relevant for human perception of music.
 ![App Screenshot](https://miro.medium.com/v2/resize:fit:1400/1*pzE4i1TXaLCmzTXgdxFZjQ.jpeg)
