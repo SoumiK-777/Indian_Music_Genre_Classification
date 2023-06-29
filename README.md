@@ -28,7 +28,7 @@ Features which are useful for audio classification
 ![App Screenshot](https://miro.medium.com/v2/resize:fit:1182/1*OOTqBsjpuXyfYJVdPxWtBA.png)
 
 - **MFCC**: Mel-Frequency Cepstral Coefficients (MFCCs) are coefficients that collectively make up an MFC. They are derived from a type of cepstral (result of computing the inverse Fourier transform (IFT) of the logarithm of the estimated signal spectrum) representation of the audio clip (a nonlinear **spectrum-of-a-spectrum**). They are used in music classification because they capture the spectral characteristics of a sound that are most relevant for human perception of music.
-![App Screenshot](https://i.stack.imgur.com/q8YfI.png)
+![App Screenshot](https://miro.medium.com/v2/resize:fit:1400/1*pzE4i1TXaLCmzTXgdxFZjQ.jpeg)
 
 ## Models Trained
 
